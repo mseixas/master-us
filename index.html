@@ -6,6 +6,9 @@
     <title>Master School Martial Arts | Central Florida</title>
     <meta name="description" content="Premium martial arts instructors for schools, gyms, and studios in Central Florida.">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon us black.png">
+    
     <!-- Google Fonts: Oswald (Headings) & Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +40,6 @@
         }
     </script>
     <style>
-        /* Estilos e Efeitos Baseados no Prompt */
         .bg-hero {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.85) 100%), url('https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
         }
@@ -45,7 +47,7 @@
             background: rgba(17, 17, 17, 0.7);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.15); /* Borda sutil dourada */
+            border: 1px solid rgba(212, 175, 55, 0.15);
         }
         .btn-primary {
             background-color: #991B1B;
@@ -62,15 +64,14 @@
 <body class="bg-brand-black text-brand-white font-sans antialiased">
 
     <!-- Navigation Header -->
-    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-brand-gold/20 transition-all duration-300">
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-brand-gold/20 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-4">
-                    <span class="font-heading text-2xl md:text-3xl font-bold tracking-wider text-brand-white uppercase">
-                        MASTER SCHOOL
-                    </span>
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center">
+                    <img src="logo us white.png" alt="Master School Logo" class="h-12 md:h-16 w-auto object-contain">
                 </div>
-                <a href="#contact" class="hidden md:inline-flex btn-primary px-6 py-2 font-heading font-bold uppercase tracking-wide text-sm">
+                <!-- Contact Us com link B2B -->
+                <a href="https://wa.me/5567992479065?text=Hello!%20I%20own%20a%20facility/school%20in%20Central%20Florida%20and%20I%20am%20looking%20for%20qualified%20martial%20arts%20instructors." target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex btn-primary px-6 py-2 font-heading font-bold uppercase tracking-wide text-sm">
                     Contact Us
                 </a>
             </div>
@@ -78,11 +79,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen bg-hero flex items-center pt-20">
+    <section class="min-h-screen bg-hero flex items-center pt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center gap-8">
             
-            <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-brand-gold text-brand-gold font-medium text-xs md:text-sm uppercase tracking-widest mb-2">
-                Central Florida
+            <!-- Elementos de Destaque -->
+            <div class="flex flex-col items-center gap-3 mb-2">
+                <!-- Coming Soon animado -->
+                <div class="animate-pulse bg-brand-red text-white px-4 py-1.5 rounded font-heading tracking-widest uppercase text-sm md:text-base font-bold shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+                    Coming Soon
+                </div>
+                <div class="inline-flex items-center px-4 py-1 border-b border-brand-gold text-brand-gold font-medium text-xs md:text-sm uppercase tracking-widest">
+                    Central Florida
+                </div>
             </div>
             
             <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight uppercase tracking-tight max-w-4xl">
@@ -128,7 +136,6 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300" style="border-radius: 4px;">
                     <h3 class="font-heading text-2xl font-bold mb-4 text-brand-white uppercase">Turnkey Programs</h3>
                     <p class="text-brand-gray font-light leading-relaxed">
@@ -136,7 +143,6 @@
                     </p>
                 </div>
                 
-                <!-- Card 2 -->
                 <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300" style="border-radius: 4px;">
                     <h3 class="font-heading text-2xl font-bold mb-4 text-brand-white uppercase">Certified Quality</h3>
                     <p class="text-brand-gray font-light leading-relaxed">
@@ -144,7 +150,6 @@
                     </p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300" style="border-radius: 4px;">
                     <h3 class="font-heading text-2xl font-bold mb-4 text-brand-white uppercase">Boost Retention</h3>
                     <p class="text-brand-gray font-light leading-relaxed">
@@ -159,8 +164,8 @@
     <footer class="bg-[#0a0a0a] pt-16 pb-8 border-t border-brand-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
-                <h4 class="font-heading text-2xl font-bold text-brand-white mb-1 uppercase tracking-wider">MASTER SCHOOL</h4>
-                <p class="text-sm text-brand-gray">Martial Arts LLC • Central Florida</p>
+                <img src="logo us white.png" alt="Master School Logo" class="h-10 md:h-12 w-auto object-contain mx-auto md:mx-0 mb-3 opacity-90">
+                <p class="text-sm text-brand-gray uppercase tracking-widest">Martial Arts LLC • Central Florida</p>
             </div>
             
             <div class="flex gap-6">
