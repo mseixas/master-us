@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master School Martial Arts | Coming Soon</title>
+    <meta name="description" content="Elevating Martial Arts Instruction in Central Florida. Traditional Taekwondo & Self-Defense programs.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            slate: '#0F172A',
+                            crimson: '#DC2626',
+                            white: '#FFFFFF',
+                            gold: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Efeitos sutis adicionais e background gradient */
+        .bg-hero {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%), url('https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-brand-slate text-brand-white font-sans antialiased selection:bg-brand-crimson selection:text-white">
+
+    <!-- Navigation Header -->
+    <nav class="fixed w-full z-50 glass-card border-b-0 border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-4">
+                    <span class="font-heading text-2xl font-bold tracking-wider text-brand-white">
+                        MASTER SCHOOL
+                    </span>
+                    <span class="hidden md:inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30">
+                        Coming to Central Florida
+                    </span>
+                </div>
+                <a href="#partner" class="bg-brand-crimson hover:bg-red-700 text-white px-6 py-2 rounded font-heading tracking-wide transition-colors duration-300 shadow-lg shadow-brand-crimson/30">
+                    PARTNER WITH US
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-hero flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-3/5 space-y-8">
+                <div class="inline-block px-4 py-1.5 rounded-full border border-brand-gold/50 text-brand-gold font-medium text-sm mb-4">
+                    Orlando • Winter Garden • Clermont
+                </div>
+                <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight uppercase tracking-tight">
+                    Elevating Martial Arts Instruction in <span class="text-brand-crimson">Central Florida</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 font-light max-w-2xl">
+                    Turnkey Traditional Taekwondo & Krav Maga Self-Defense programs brought directly to your gym, school, or facility.
+                </p>
+                
+                <!-- Dual CTA Forms -->
+                <div class="grid md:grid-cols-2 gap-6 pt-4" id="partner">
+                    <!-- B2B Form -->
+                    <div class="glass-card p-6 rounded-xl relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-brand-crimson"></div>
+                        <h3 class="font-heading text-xl mb-2 text-white">Facility Owners</h3>
+                        <p class="text-sm text-gray-400 mb-4">Partner with us for asset-light integration.</p>
+                        <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+                            <input type="email" placeholder="Business Email" class="w-full bg-brand-slate/50 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-brand-crimson transition-colors">
+                            <button class="w-full bg-brand-white text-brand-slate font-bold py-2 rounded hover:bg-gray-200 transition-colors">Request Info</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Student Form -->
+                    <div class="glass-card p-6 rounded-xl relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-brand-gold"></div>
+                        <h3 class="font-heading text-xl mb-2 text-white">Students & Families</h3>
+                        <p class="text-sm text-gray-400 mb-4">Get early access to our Launch Phase 1.</p>
+                        <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+                            <input type="email" placeholder="Your Email" class="w-full bg-brand-slate/50 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-brand-gold transition-colors">
+                            <button class="w-full bg-brand-gold text-brand-slate font-bold py-2 rounded hover:bg-yellow-500 transition-colors">Join Waitlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Grid -->
+    <section class="py-24 bg-brand-slate relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold uppercase tracking-wide mb-4">The Master School Advantage</h2>
+                <div class="w-24 h-1 bg-brand-crimson mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-brand-crimson/20 rounded-lg flex items-center justify-center mb-6 border border-brand-crimson/50">
+                        <svg class="w-6 h-6 text-brand-crimson" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-3 text-brand-white">Asset-Light Integration</h3>
+                    <p class="text-gray-400 font-light">Plug-and-play martial arts programs designed for existing gyms and schools. Zero equipment overhead, maximum value addition.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center mb-6 border border-brand-gold/50">
+                        <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-3 text-brand-white">Certified Excellence</h3>
+                    <p class="text-gray-400 font-light">Programs structured strictly under ATA Songahm methodology, ensuring high-quality, standardized instruction at every location.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 border border-blue-500/50">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-3 text-brand-white">Youth & Family Focus</h3>
+                    <p class="text-gray-400 font-light">Structured extracurricular and fitness programs designed to build discipline, confidence, and drive exceptional retention rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Highlight Section -->
+    <section class="py-20 bg-[#0b1121] border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-crimson/10 rounded-full blur-3xl"></div>
+                
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-brand-crimson/30 shrink-0 bg-gray-800 flex items-center justify-center">
+                    <!-- Placeholder for Founder Image -->
+                    <span class="text-gray-500 font-heading text-xl">Founder Photo</span>
+                </div>
+                
+                <div class="flex-1 text-center md:text-left z-10">
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2">Master Murilo Seixas Ribeiro</h2>
+                    <p class="text-brand-gold font-medium mb-6 uppercase tracking-wider text-sm">4th Dan Black Belt • Level 3 ATA Certified Instructor</p>
+                    <p class="text-gray-300 font-light leading-relaxed mb-6">
+                        With nearly two decades of martial arts expertise and a robust background in private security, Master Murilo brings a unique blend of traditional discipline and real-world self-defense. His mission is to forge resilient communities in Central Florida through elite instruction and uncompromising standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-slate pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="font-heading text-2xl font-bold text-white mb-2">MASTER SCHOOL</h4>
+                <p class="text-sm text-gray-500">Martial Arts LLC • Central Florida</p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="https://instagram.com/masterschool.usa" target="_blank" class="text-gray-400 hover:text-brand-crimson transition-colors flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <span>@masterschool.usa</span>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-xs text-gray-600">
+            &copy; 2026 Master School Martial Arts LLC. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
